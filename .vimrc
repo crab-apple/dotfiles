@@ -1,5 +1,8 @@
 
+"Basic settings
 set ignorecase
+set hlsearch
+set incsearch
 
 colorscheme darkblue
 "set autoindent
