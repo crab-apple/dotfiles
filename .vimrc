@@ -27,6 +27,9 @@ Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end()
 filetype plugin indent on
 
+" Break only at spaces or tabs (unless something changes the value of breakat)
+set linebreak
+
 " Lilypond
 filetype off
 set runtimepath+=/usr/share/lilypond/2.16.2/vim/ 
