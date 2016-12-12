@@ -22,7 +22,22 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+" CtrlP (fuzzy search of files)
 Plugin 'ctrlpvim/ctrlp.vim'
+
+"ack.vim
+Plugin 'mileszs/ack.vim'
+
+"CofeeScript support
+Plugin 'kchmck/vim-coffee-script'
+
+"Scala support
+Plugin 'derekwyatt/vim-scala'
+
+"TypeScript support
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Quramy/tsuquyomi' "(Tools)
+Plugin 'HerringtonDarkholme/yats.vim' "(Syntax highlighting)
 
 call vundle#end()
 filetype plugin indent on
@@ -37,5 +52,13 @@ filetype on
 syntax on
 filetype plugin on	" Enables the ftplugin options
 set autoindent		" Automaticaly indent while writing.
+
+
+" Vertical line after 80 chars
+":set colorcolumn=81
+":highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
+
+" 4 spaces for Java files
+autocmd FileType java setlocal shiftwidth=4 tabstop=4
 
 
